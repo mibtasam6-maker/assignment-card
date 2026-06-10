@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignment</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      background-color: #4472C4;
+      padding: 18px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .page {
+      background-color: white;
+      width: 100%;
+      max-width: 700px;
+      min-height: 400px;
+      padding: 60px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #e8e8e8;
+      border: 1px solid #bbb;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      gap: 24px;
+      width: 100%;
+    }
+
+    /* ✅ Photo box fixed size */
+    .photo-box {
+      width: 120px;
+      height: 110px;
+      border: 1px solid #999;
+      flex-shrink: 0;
+      overflow: hidden;   /* ← ye zaroori hai photo bahar na jaye */
+    }
+
+    /* ✅ Image sirf box ke andar rahe */
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  /* ← photo fit rahe stretch na ho */
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .info .name {
+      font-size: 22px;
+      font-weight: normal;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .info .detail {
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Assignment</h1>
+  </div>
+
+  <div class="page">
+    <div class="card">
+
+      <!-- ✅ Sirf img tag, koi silhouette nahi -->
+      <div class="photo-box">
+        <img src="image.jpeg" alt="My Photo" />
+      </div>
+
+      <div class="info">
+        <p class="name">Zainab Asim</p>
+        <p class="detail">Web Development</p>
+        <p class="detail">0300 1234567</p>
+        <p class="detail">zainabasim@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
